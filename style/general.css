@@ -1,0 +1,25 @@
+body{
+    font-family: Arial;
+    height: 3000px;
+    
+
+    position: absolute;
+    top: 80px;
+    left: 100px; 
+    
+}
+.wrapper{ /*我忘記這是什麼，但先放著之後試*/
+    width: 1405px;
+    margin: 0 auto;
+    align-content: center;
+}
+@media(min-width:1220px){
+    .help-tip{
+        display: block;
+    }
+}
+@media (max-width:1220px) {
+    .help-tip{
+        display: none;
+    }
+}

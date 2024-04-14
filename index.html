@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--Bug-->
+<!--
+  點網址只會點到 YOUTUBE
+  查詢功能尚未完成
+-->
+<html>
+    
+        <head>
+            <title>search</title>
+            
+              <link rel="stylesheet" href="/style/header.css">
+              <link rel="stylesheet" href="/style/sidebar.css">
+              <link rel="stylesheet" href="/style/logo.css">
+              <link rel="stylesheet" href="/style/body-search.css">
+              <link rel="stylesheet" href="/style/search-page.css"
+            
+            
+        </head>
+        
+        <body>
+            <div class="wrapper">
+                <header>
+                  <div class="logo">
+                    <img src="/image_logo/image_logo.png" class="image_logo">
+                  </div>
+                </header>
+          
+                <header> 
+                    <div class="header">
+                      
+                      <input type="text" class=" input-number" placeholder="id">
+                      <input type="text" class=" input-name" placeholder="name">
+                      <!--/*垂直輸入*/-->
+                      <textarea class="input-info" rows="1" col="1" placeholder="info">This guy is lazy. He didn't write anything.</textarea>
+          
+                      <!--要判斷回傳是否為 none-->
+                      <select class="web">
+                        <option selected>none</option>
+                        <option  value="video">video</option>
+                        <option  value="manga">manga</option>
+                        <option  value="novel">novel</option>
+                        
+                      </select>
+                      <button class="add">add</button>
+                    </div>
+                </header>
+          
+                <nav>
+                  <div class="side">
+                    <button class="menu">Menu</button>
+                    <a href="/index.html" >
+                      <button class="sidebar-search">
+                        #search
+                      </button>
+                    </a>
+                    <a href="/video.html" >
+                      <button class="sidebar-video" >
+                        #video
+                      </button>
+                    </a>
+                    <a href="/manga.html" >
+                      <button class="sidebar-manga" >
+                        #manga
+                      </button>
+                    </a>    
+                    <a href="/novel.html" >
+                      <button class="sidebar-novel">
+                        #novel
+                      </button>
+                    </a>
+                    
+                  </div>
+                </nav>
+                  
+                <main>
+                <div class="search">
+                  <div class="up">
+                    <input type="text" class="input-bar" placeholder="search id or type">
+                    
+                  </div>
+                  <div class="down">
+                    
+                    <select class="web-select option-search">
+                      <option fixed style="font-weight: bold;">none</option>
+                      <optgroup label="manga" >
+                        <option value="m1">
+                          看漫畫
+                        </option>
+                        <option value="m2">
+                          包子漫畫
+                        </option>
+                        
+                      </optgroup>
+
+                      <optgroup label="video">
+                        <option value="v1">
+                          動畫瘋
+                        </option>
+                        <option value="v2">
+                          Anime1.me
+                        </option>
+                      </optgroup>
+
+                      <optgroup label="novel" >
+                        <option>尚待更新</option>
+                      </optgroup>
+                      <
+                    </select>
+                    <button class="enter">enter</button>
+                  </div>
+                  </div>
+                </main> 
+
+            </div>
+            
+            <script src="/scripts/sidebar.js"></script>
+            <script src="/scripts/search.js" type="module"></script>
+    </body>
+</html>

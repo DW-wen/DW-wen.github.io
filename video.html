@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>video</title>
+       
+          <link rel="stylesheet" href="/style/video.css">
+          <link rel="stylesheet" href="/style/general.css">
+          <link rel="stylesheet" href="/style/header.css">
+          <link rel="stylesheet" href="/style/sidebar.css">
+          <link rel="stylesheet" href="/style/logo.css">
+       
+    </head>
+    <body>
+
+      <header>
+        <div class="logo">
+          <img src="/image_logo/image_logo.png" class="image_logo">
+        </div>
+      </header>
+
+        <header> 
+          <div class="header">
+            <input type="text" class=" input-number" placeholder="id (number)">
+            <input type="text" class=" input-name" placeholder="title">
+            <input type="text" class=" input-author" placeholder="author">
+            <!--/*垂直輸入*/-->
+            <textarea class="input-info" rows="1" col="1" placeholder="info">This guy is lazy. He didn't write anything.</textarea>
+
+            <!--要判斷回傳是否為 none-->
+            <select class="web">
+              <option selected>none</option>
+              <option  value="video">video</option>
+              <option  value="manga">manga</option>
+              <option  value="novel">novel</option>
+            </select>
+            <button class="add">add</button>
+          </div>
+        </header>
+
+        <nav>
+          <div class="side">
+            <button class="menu">Menu</button>
+            <a href="/index.html" >
+              <button class="sidebar-search">
+                #search
+              </button>
+            </a>
+            <a href="/video.html"  >
+              <button class="sidebar-video" >
+                #video
+              </button>
+            </a>
+            <a href="/manga.html" >
+              <button class="sidebar-manga" >
+                #manga
+              </button>
+            </a>    
+            <a href="/novel.html"  >
+              <button class="sidebar-novel" >
+                #novel
+              </button>
+            </a>
+            
+          </div>
+        </nav>
+
+        <main>
+          <div class="grid-video"> <!--設定排數-->
+            <!--first-->
+              <div class="video-preview">
+                
+                  <!--heart-->
+                  <img src="/like-heart/red-heart-removebg-preview.png" class="like-heart" onclick="">
+                  <!--delete-button-->
+                  <button class="delete-button js-delete-button" onclick="">delete</button>
+                  <!--插入照片-->
+                  <a href="https://www.youtube.com/" target="_blank"><img class="video-image" src="/video/emily_1.jpg"></a>
+                
+                  
+                  <div class="video-info"> 
+                    <p class="title">
+                      Debug 中  
+                    </p>
+                    <div class="info-and-order">
+                      <div class="info-button-click">
+                        <button class="info-button">
+                          info
+                        </button>
+                        <p class="introduction">
+                          hishnjbhjnkm
+                        </p>
+                      </div>
+                      
+                      <div class="number-button-click">
+                        <button class="number-button">
+                          number
+                        </button>
+                        <p class="delete-or-not">
+                          hishnjbhjnkm
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </div>
+              </div>
+           
+  
+</div>
+        </main>   
+        <script src="/scripts/screen_display_video.js" type="module"></script>
+        
+          <script src="/scripts/addSomethingInside.js" type="module"></script>
+        
+        
+        
+        
+    </body>
+</html>

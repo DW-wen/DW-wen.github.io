@@ -1,0 +1,16 @@
+.logo{
+    display: grid;
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 80px;
+    align-content: center;
+    justify-content: center;
+}
+.image_logo{
+    z-index: 1000;
+    width: 100px;
+    height:100px;
+}
